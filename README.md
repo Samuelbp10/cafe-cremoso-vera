@@ -24,7 +24,7 @@ Este projeto foi construído para fornecer uma presença digital elegante e func
 ## 🌐 Acesse o Projeto
 
 O site está no ar e pode ser acessado através do link:
-👉 **[Cole aqui o link do seu GitHub Pages gerado no passo anterior]**
+👉 **https://samuelbp10.github.io/cafe-cremoso-vera/**
 
 ---
 Desenvolvido com dedicação por **Samuel** - *Sistemas de Informação*
