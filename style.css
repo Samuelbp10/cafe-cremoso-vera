@@ -1,0 +1,268 @@
+/* =========================================
+   ARQUIVO: style.css
+   Café Cremoso da Vera - Totalmente Responsivo
+   ========================================= */
+
+:root {
+    --bg-dark: #1a0f0a; /* Marrom quase preto (Espresso) */
+    --bg-card: #261811; /* Marrom escuro */
+    --text-main: #f5ebe0; /* Bege claro (Espuma do café) */
+    --accent: #d4a373; /* Cor de caramelo/madeira */
+    --accent-hover: #b88656;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Evita que o site estique ao infinito em telas Ultra-Wide, limitando a 1600px */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    max-width: 1600px; 
+    margin: 0 auto; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* ======== NAVEGAÇÃO ======== */
+header {
+    background-color: rgba(26, 15, 10, 0.95);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #3d2b1f;
+}
+
+.logo {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* ======== CAPA (HERO) ======== */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(rgba(26, 15, 10, 0.8), rgba(26, 15, 10, 0.8)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80') center/cover;
+    border-bottom: 2px solid var(--accent);
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem); 
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-style: italic;
+}
+
+/* ======== SOBRE A VERA ======== */
+.sobre {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+/* ======== PRODUTOS ======== */
+.produtos {
+    padding: 80px 20px; 
+    background-color: var(--bg-card);
+}
+
+.produtos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--bg-dark);
+    border: 1px solid #3d2b1f;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 25px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.foto-produto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--accent);
+}
+
+.card h3 {
+    margin: 20px 10px 10px 10px;
+    font-size: 1.5rem;
+    flex-grow: 1; 
+}
+
+.card .preco {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+/* ESTILIZAÇÃO OTIMIZADA DOS BOTÕES */
+.btn-comprar {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+    margin: 0 auto;
+    
+    /* Regras que consertam o botão esticado */
+    width: fit-content; 
+    min-width: 200px; 
+    text-align: center;
+}
+
+.btn-comprar:hover {
+    background-color: var(--accent-hover);
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+    background-color: #110906;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 1px solid #3d2b1f;
+}
+
+.encomendas {
+    margin-bottom: 30px;
+}
+
+.encomendas h3 {
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   MEDIA QUERIES (A MÁGICA DA RESPONSIVIDADE)
+   ========================================= */
+
+/* Tablets e Notebooks Pequenos (até 992px) */
+@media (max-width: 992px) {
+    header {
+        padding: 20px;
+    }
+    .grid-produtos {
+        gap: 20px;
+    }
+}
+
+/* Celulares e Tablets em pé (até 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .sobre, .produtos {
+        padding: 50px 15px;
+    }
+
+    .sobre h2, .produtos h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Celulares Pequenos (até 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 5px;
+        display: block;
+    }
+    
+    .foto-produto {
+        height: 200px; 
+    }
+    
+    .btn-comprar {
+        width: 90%; /* Garante que o botão preencha bem a tela do celular */
+    }
+}

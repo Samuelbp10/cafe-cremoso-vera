@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Cremoso da Vera | Artesanal</title>
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- LINK PARA O ARQUIVO CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO COM ABAS -->
+    <header>
+        <a href="#" class="logo">Café Cremoso da Vera</a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#encomendas">Encomendas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section id="inicio" class="hero">
+        <h1>O Sabor da Tradição</h1>
+        <p>Receitas artesanais de família, preparadas com carinho para o seu momento de pausa.</p>
+        <a href="#produtos" class="btn-comprar">Ver Cardápio</a>
+    </section>
+
+    <!-- SOBRE A VERA (Nossa Essência Artesanal) -->
+    <section id="sobre" class="sobre">
+        <h2>Nossa Essência Artesanal</h2>
+        <p style="margin: 0 auto 30px auto; max-width: 800px; text-align: justify; color: #e0d5c1; font-size: 1.1rem; line-height: 1.6;">
+            O Café Cremoso da Vera é o resultado da paixão por sabores genuínos e processos manuais. Não utilizamos atalhos industriais; nosso compromisso é com a qualidade absoluta entregue em cada pote de 500ml.
+        </p>
+        
+        <h3 style="margin-bottom: 20px; font-size: 1.8rem; text-align: center; color: var(--accent);">Por que somos diferentes?</h3>
+        
+        <ul style="list-style-position: inside; text-align: left; max-width: 600px; margin: 0 auto; color: #e0d5c1; font-size: 1.1rem; line-height: 1.8;">
+            <li style="margin-bottom: 15px;">
+                <strong style="color: var(--text-main);">Produção em Pequenos Lotes:</strong> Garantimos o frescor e a textura de mousse perfeita.
+            </li>
+            <li style="margin-bottom: 15px;">
+                <strong style="color: var(--text-main);">Ingredientes Selecionados:</strong> Desde a canela aromática até o amendoim com açúcar mascavo puro.
+            </li>
+            <li>
+                <strong style="color: var(--text-main);">Receita de Família:</strong> O sabor autêntico de um produto feito com alma e dedicação.
+            </li>
+        </ul>
+    </section>
+
+    <!-- VITRINE DE PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <h2>Nossos Cafés (500ml)</h2>
+        <div class="grid-produtos">
+            
+            <!-- PRODUTO 1 -->
+            <div class="card">
+                <!-- Ajuste o src="img/..." com o nome exato da sua imagem -->
+                <img src="img/tradicional-com-canela.jpg" class="foto-produto" alt="Pote artesanal de Café Cremoso da Vera sabor Tradicional com Canela, textura de mousse firme e pó de canela polvilhado.">
+                
+                <h3>Tradicional com Canela</h3>
+                <p class="preco">R$ 15,00</p>
+                <a href="https://wa.me/5531985836760?text=Olá! Gostaria de pedir um Café Tradicional com Canela 500ml." target="_blank" class="btn-comprar">Pedir no WhatsApp</a>
+            </div>
+
+            <!-- PRODUTO 2 -->
+            <div class="card">
+                <img src="img/cappuccino.jpg" class="foto-produto" alt="Xícara rústica de Café Cremoso da Vera sabor Cappuccino, com textura de mousse firme, cacau em pó e lascas de chocolate.">
+                
+                <h3>Cappuccino</h3>
+                <p class="preco">R$ 15,00</p>
+                <a href="https://wa.me/5531985836760?text=Olá! Gostaria de pedir um Cappuccino 500ml." target="_blank" class="btn-comprar">Pedir no WhatsApp</a>
+            </div>
+
+            <!-- PRODUTO 3 -->
+            <div class="card">
+                <img src="img/cha-amendoim.jpg" class="foto-produto" alt="Caneca rústica de Chá de Amendoim Mascavo da Vera, com textura de mousse espessa e pedaços de amendoim torrado.">
+                
+                <h3>Chá de Amendoim Mascavo</h3>
+                <p class="preco">R$ 20,00</p>
+                <a href="https://wa.me/5531985836760?text=Olá! Gostaria de pedir um Chá de Amendoim Mascavo 500ml." target="_blank" class="btn-comprar">Pedir no WhatsApp</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ E INFORMAÇÕES DE PEDIDO -->
+    <footer id="encomendas">
+        <div class="encomendas">
+            <h3>Horários de Encomenda e Retirada</h3>
+            <p><strong>Pedidos:</strong> Segunda a Quinta-feira, até as 12:00h</p>
+            <p><strong>Retiradas:</strong> Quinta e Sexta-feira das 16h às 22h</p>
+        </div>
+        
+        <p style="color: var(--accent); margin-top: 30px; font-size: 0.9rem;">
+            &copy; 2026 Café Cremoso da Vera. Todos os direitos reservados. <br>
+            Desenvolvido por Samuel.
+        </p>
+    </footer>
+
+</body>
+</html>
